@@ -4,6 +4,8 @@
 
 **ИИ-оценка экономического ущерба от паводка и оптимизация заказа ДЗЗ**
 
+[![Проверки](https://github.com/eugenetatarchenkolaw/test_EO/actions/workflows/validate.yml/badge.svg)](https://github.com/eugenetatarchenkolaw/test_EO/actions/workflows/validate.yml)
+
 Учебный репозиторий кейса «КосмоХакатон — 2026». Здесь собраны постановка, источники, форматы обмена и инструменты проверки. Модель, расчет неопределенности, способ выбора съемки и продукт для пользователя разрабатывает команда.
 
 [Начать работу](#начать-работу) · [Правила](docs/CASE_RULES.md) · [Критерии: 100 баллов](docs/EVALUATION.md) · [Данные](docs/DATA.md) · [Стоимость по ПП № 840](docs/PRICING_PP840.md) · [Научные источники](docs/REFERENCES.md)
@@ -131,6 +133,6 @@ python -m tools.validate_submission --data data/competition --submission outputs
 
 ## Навигация и условия использования
 
-[FAQ](docs/FAQ.md) · [Исправления методических неточностей](docs/METHODOLOGICAL_NOTES.md) · [Список литературы](docs/REFERENCES.md) · [Лицензии](LICENSE.md) · [История версии](CHANGELOG.md)
+[Проверки версии](docs/VERIFICATION.md) · [FAQ](docs/FAQ.md) · [Исправления методических неточностей](docs/METHODOLOGICAL_NOTES.md) · [Список литературы](docs/REFERENCES.md) · [Лицензии](LICENSE.md) · [История версии](CHANGELOG.md)
 
 Исходная организационная модель — [кейс test_oil](https://github.com/SpaceEconomyPolicy/test_oil). Научная постановка, материалы и инструменты FloodValue разработаны для задачи паводкового ущерба и закупки ДЗЗ. Вопросы о данных и правилах направляйте в [Issues](https://github.com/eugenetatarchenkolaw/test_EO/issues); не прикладывайте скрытую разметку, токены или персональные данные.
