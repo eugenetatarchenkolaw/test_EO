@@ -4,7 +4,6 @@
 
 **ИИ-оценка экономического ущерба от паводка и оптимизация заказа ДЗЗ**
 
-[![Проверки](https://github.com/eugenetatarchenkolaw/test_EO/actions/workflows/validate.yml/badge.svg)](https://github.com/eugenetatarchenkolaw/test_EO/actions/workflows/validate.yml)
 
 Учебный репозиторий кейса «КосмоХакатон — 2026». Здесь собраны постановка, источники, форматы обмена и инструменты проверки. Модель, расчет неопределенности, способ выбора съемки и продукт для пользователя разрабатывает команда.
 
