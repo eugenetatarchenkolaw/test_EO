@@ -9,9 +9,9 @@
 <circle cx="928" cy="240" r="10" fill="#fff"/><path d="M922 240l4 4 9-10" fill="none" stroke="#765825" stroke-width="2"/>
 <rect x="54" y="53" width="5" height="34" fill="#b67d23"/>
 <g font-family="DejaVu Sans,Arial,sans-serif" fill="#153d53">
-<text x="78" y="77" font-size="17" letter-spacing="2">КОСМОХАКАТОН · 2026</text>
+
 <text x="53" y="171" font-size="70" font-weight="700">FloodValue</text>
 <text x="57" y="225" font-size="25">От карты паводка</text>
 <text x="57" y="261" font-size="25">к обоснованному заказу ДЗЗ</text>
-<text x="57" y="326" font-size="17" fill="#526d7c">Вероятность · Ущерб · Неопределенность · Бюджет</text>
+
 </g></svg>
