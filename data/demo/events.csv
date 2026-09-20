@@ -1,0 +1,4 @@
+event_id,region_id,date,split
+DEMO_E1,DEMO_R1,2026-09-11,train
+DEMO_E2,DEMO_R2,2026-09-12,validation
+DEMO_E3,DEMO_R3,2026-09-13,test

@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A1",
+        "aoi_id": "DEMO_AOI3",
+        "asset_class": "warehouse",
+        "asset_value_rub": "10000000",
+        "vulnerability_coef": ".25",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.003",
+        "latitude": "50.003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.003,
+          50.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A2",
+        "aoi_id": "DEMO_AOI3",
+        "asset_class": "substation",
+        "asset_value_rub": "20000000",
+        "vulnerability_coef": ".4",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.006",
+        "latitude": "50.003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.006,
+          50.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A3",
+        "aoi_id": "DEMO_AOI3",
+        "asset_class": "road_unit",
+        "asset_value_rub": "5000000",
+        "vulnerability_coef": ".3",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.009",
+        "latitude": "50.003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.009,
+          50.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A4",
+        "aoi_id": "DEMO_AOI3",
+        "asset_class": "facility",
+        "asset_value_rub": "8000000",
+        "vulnerability_coef": ".2",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.012",
+        "latitude": "50.003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.012,
+          50.003
+        ]
+      }
+    }
+  ]
+}

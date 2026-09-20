@@ -1,0 +1,19 @@
+{
+  "dataset_version": "REPLACE",
+  "code_commit": "REPLACE",
+  "seed": 2026,
+  "environment": {
+    "python": "REPLACE",
+    "packages": {}
+  },
+  "threshold": null,
+  "uncertainty_method": "REPLACE",
+  "aggregation": "REPLACE",
+  "comparison_notes": "REPLACE",
+  "decision_action": "REPLACE",
+  "known_expected_loss_rub": null,
+  "unassessed_asset_value_rub": null,
+  "runtime_seconds": null,
+  "metrics_by_event": [],
+  "loss_model": "control_pvq"
+}

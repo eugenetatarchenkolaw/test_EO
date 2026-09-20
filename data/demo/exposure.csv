@@ -1,0 +1,5 @@
+asset_id,aoi_id,asset_class,asset_value_rub,vulnerability_coef,value_date,value_basis,longitude,latitude
+DEMO_A1,DEMO_AOI3,warehouse,10000000,.25,2026-09-01,synthetic_replacement_value,30.003,50.003
+DEMO_A2,DEMO_AOI3,substation,20000000,.4,2026-09-01,synthetic_replacement_value,30.006,50.003
+DEMO_A3,DEMO_AOI3,road_unit,5000000,.3,2026-09-01,synthetic_replacement_value,30.009,50.003
+DEMO_A4,DEMO_AOI3,facility,8000000,.2,2026-09-01,synthetic_replacement_value,30.012,50.003

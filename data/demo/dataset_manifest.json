@@ -1,0 +1,10 @@
+{
+  "version": "demo-1.0",
+  "status": "synthetic_demo",
+  "description": "Полностью условные данные для проверки интерфейсов. Не обучающая выборка.",
+  "license": "CC0-1.0",
+  "split_policy": "event_region_scene_disjoint",
+  "rasters_included": false,
+  "source": "Authored arithmetic fixtures, not satellite observations",
+  "price_rate_status": "scenario"
+}

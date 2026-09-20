@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+<title id="title">FloodValue</title><desc id="desc">От карты паводка к обоснованному заказу данных дистанционного зондирования Земли. КосмоХакатон 2026.</desc>
+<rect width="1280" height="380" fill="#f0f5f7"/>
+<path d="M840 0v380M920 0v380M1000 0v380M1080 0v380M1160 0v380M1240 0v380M800 60h480M800 140h480M800 220h480M800 300h480" stroke="#d6e3e9" fill="none"/>
+<path d="M1060 -20C940 60 1170 120 1050 190S960 270 1060 400" stroke="#a6cddf" stroke-width="86" fill="none"/>
+<path d="M1060 -20C940 60 1170 120 1050 190S960 270 1060 400" stroke="#4a95b7" stroke-width="24" fill="none"/>
+<g fill="none" stroke="#1a4962" stroke-width="3"><rect x="905" y="86" width="112" height="92"/><rect x="1025" y="214" width="130" height="108"/></g>
+<rect x="881" y="206" width="94" height="70" fill="#d3a94e" stroke="#765825" stroke-width="2"/>
+<circle cx="928" cy="240" r="10" fill="#fff"/><path d="M922 240l4 4 9-10" fill="none" stroke="#765825" stroke-width="2"/>
+<rect x="54" y="53" width="5" height="34" fill="#b67d23"/>
+<g font-family="DejaVu Sans,Arial,sans-serif" fill="#153d53">
+<text x="78" y="77" font-size="17" letter-spacing="2">КОСМОХАКАТОН · 2026</text>
+<text x="53" y="171" font-size="70" font-weight="700">FloodValue</text>
+<text x="57" y="225" font-size="25">От карты паводка</text>
+<text x="57" y="261" font-size="25">к обоснованному заказу ДЗЗ</text>
+<text x="57" y="326" font-size="17" fill="#526d7c">Вероятность · Ущерб · Неопределенность · Бюджет</text>
+</g></svg>

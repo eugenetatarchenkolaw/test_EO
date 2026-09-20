@@ -1,0 +1,5 @@
+candidate_id,area_km2,sensor_type,resolution_m,acquisition_type,acquired_date,guaranteed_purchase,available_at,processing_level,usage_mode,data_role,base_rate_rub_km2,base_rate_status,base_rate_source,zero_rate_basis,discount_group_id
+DEMO_O1,1.000,optical,1,new,,true,2026-09-20T11:00:00Z,L2,internal,event_observation,788.64,scenario,docs/PRICING_PP840.md: arithmetic scenario,,OPT_1M
+DEMO_O2,2.000,optical,1,operational,2026-09-20,false,2026-09-20T10:00:00Z,L2,internal,event_observation,788.64,scenario,docs/PRICING_PP840.md: arithmetic scenario,,OPT_1M
+DEMO_S1,3.000,sar,1,operational,2026-09-20,false,2026-09-20T09:00:00Z,L1,internal,event_observation,788.64,scenario,docs/PRICING_PP840.md: arithmetic scenario,,SAR_1M
+DEMO_ARCHIVE,1.000,optical,1,archive,2025-09-20,false,2026-09-20T08:00:00Z,L2,internal,context,788.64,scenario,docs/PRICING_PP840.md: arithmetic scenario,,OPT_1M
