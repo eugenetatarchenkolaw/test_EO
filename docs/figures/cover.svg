@@ -7,7 +7,7 @@
 <g fill="none" stroke="#1a4962" stroke-width="3"><rect x="905" y="86" width="112" height="92"/><rect x="1025" y="214" width="130" height="108"/></g>
 <rect x="881" y="206" width="94" height="70" fill="#d3a94e" stroke="#765825" stroke-width="2"/>
 <circle cx="928" cy="240" r="10" fill="#fff"/><path d="M922 240l4 4 9-10" fill="none" stroke="#765825" stroke-width="2"/>
-<rect x="54" y="53" width="5" height="34" fill="#b67d23"/>
+
 <g font-family="DejaVu Sans,Arial,sans-serif" fill="#153d53">
 
 <text x="53" y="171" font-size="70" font-weight="700">FloodValue</text>
