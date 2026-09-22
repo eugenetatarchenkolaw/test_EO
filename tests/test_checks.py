@@ -101,29 +101,35 @@ class SubmissionTests(unittest.TestCase):
         self.config = json.loads((self.data / "config.json").read_text())
         self.catalog = read_csv(self.data / "pricing_tiles.csv")
         self.assets = [dict(zip(self.schema["asset_loss.csv"], r)) for r in [
-            ["DEMO_A1", "DEMO_AOI3", ".5", "1250000.00", ".2", "2", "1", "ok"],
+            ["DEMO_A1", "DEMO_AOI3", ".5", "1250000.00", ".2", "7", "1", "ok"],
             ["DEMO_A2", "DEMO_AOI3", ".5", "4000000.00", ".2", "1", "1", "ok"],
-            ["DEMO_A3", "DEMO_AOI3", ".5", "750000.00", ".2", "4", "1", "ok"],
-            ["DEMO_A4", "DEMO_AOI3", ".5", "800000.00", ".2", "3", "1", "ok"]]]
+            ["DEMO_A3", "DEMO_AOI3", ".5", "750000.00", ".2", "10", "1", "ok"],
+            ["DEMO_A4", "DEMO_AOI3", ".5", "800000.00", ".2", "9", "1", "ok"],
+            ["DEMO_A5", "DEMO_AOI3", ".5", "2100000.00", ".2", "4", "1", "ok"],
+            ["DEMO_A6", "DEMO_AOI3", ".5", "2250000.00", ".2", "3", "1", "ok"],
+            ["DEMO_A7", "DEMO_AOI3", ".5", "1800000.00", ".2", "5", "1", "ok"],
+            ["DEMO_A8", "DEMO_AOI3", ".5", "1350000.00", ".2", "6", "1", "ok"],
+            ["DEMO_A9", "DEMO_AOI3", ".5", "1000000.00", ".2", "8", "1", "ok"],
+            ["DEMO_A10", "DEMO_AOI3", ".5", "2400000.00", ".2", "2", "1", "ok"]]]
         self.save_assets()
         plans = {"A": [], "B": ["DEMO_O1", "DEMO_O2", "DEMO_S1"], "C": ["DEMO_O1", "DEMO_O2"]}
         (self.out / "strategy_plans.json").write_text(json.dumps(plans))
         priced, _ = price_plan(self.catalog, plans["C"], self.config)
         write_csv(self.out / "procurement_plan.csv", PRICE_FIELDS, priced)
         comparison = []
-        # Independently specified union totals: overlapping A2 must be counted once.
-        for key, coverage in [("A", D(0)), ("B", D("6800000")), ("C", D("6000000"))]:
+        # Independently specified union totals: overlapping A2/A9 must be counted once.
+        for key, coverage in [("A", D(0)), ("B", D("17700000")), ("C", D("12400000"))]:
             _, cost = price_plan(self.catalog, plans[key], self.config)
             values = [key, str(cost), "0", str(cost), str(cost <= D("4000")).lower(),
-                      str(coverage), str(coverage / D("6800000")), "", "not_estimated", "arithmetic fixture only"]
+                      str(coverage), str(coverage / D("17700000")), "", "not_estimated", "arithmetic fixture only"]
             comparison.append(dict(zip(self.schema["strategy_comparison.csv"], values)))
         write_csv(self.out / "strategy_comparison.csv", self.schema["strategy_comparison.csv"], comparison)
         write_csv(self.out / "sensitivity.csv", self.schema["sensitivity.csv"], [dict(zip(self.schema["sensitivity.csv"],
                   ["fixture", "A", '{"budget_rub":"0"}', "0", "0", "scenario", "format fixture"]))])
-        meta = {"dataset_version": "demo-1.0", "code_commit": "test-fixture", "seed": 2026,
+        meta = {"dataset_version": "demo-1.1", "code_commit": "test-fixture", "seed": 2026,
                 "environment": {"python": "test"}, "threshold": .5, "uncertainty_method": "test only",
                 "aggregation": "points", "comparison_notes": "synthetic", "decision_action": "test",
-                "known_expected_loss_rub": "6800000", "unassessed_asset_value_rub": "0"}
+                "known_expected_loss_rub": "17700000", "unassessed_asset_value_rub": "0"}
         (self.out / "run_metadata.json").write_text(json.dumps(meta))
 
     def save_assets(self):

@@ -129,6 +129,8 @@ def price_plan(catalog, selected_ids, config):
         if row["base_rate_status"] not in {"scenario", "official"} or not row["base_rate_source"]:
             raise ValueError("base rate needs status and source")
         area = number(row["area_km2"], "area_km2", positive=True)
+        if area < 1:
+            raise ValueError("case order area must be at least 1 km²")
         if area != rounded(area, 3):
             raise ValueError("case area must already be stated to 0.001 km²")
         rate = number(row["base_rate_rub_km2"], "base rate", minimum=0)

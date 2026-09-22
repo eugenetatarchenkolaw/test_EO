@@ -36,6 +36,9 @@ def audit(data):
         raise ValueError("parent scene appears in multiple splits")
     assets = unique_index(read_csv(data / "exposure.csv"), "asset_id")
     for row in assets.values():
+        if row.get("chip_id"):
+            if row["chip_id"] not in chips or chips[row["chip_id"]]["aoi_id"] != row["aoi_id"]:
+                raise ValueError("asset chip/AOI mismatch")
         number(row["asset_value_rub"], minimum=0)
         q = number(row["vulnerability_coef"], minimum=0)
         if q > 1:
@@ -61,8 +64,14 @@ def audit(data):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, required=True)
+    parser.add_argument("--geometry", action="store_true", help="also check contour areas and point coverage")
     args = parser.parse_args()
-    print(json.dumps(audit(args.data), ensure_ascii=False, indent=2))
+    report = audit(args.data)
+    if args.geometry:
+        from .geometry import audit_geometry
+        report["geometry"] = audit_geometry(args.data)
+        report["scope"] = "identifiers, arithmetic and order geometry; no spatial split certification"
+    print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

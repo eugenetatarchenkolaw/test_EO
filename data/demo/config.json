@@ -17,5 +17,12 @@
       "resolution_m": "1",
       "prior_area_km2": "0"
     }
+  },
+  "order_geometry": {
+    "type": "Polygon",
+    "allow_holes": false,
+    "min_area_km2": "1.000",
+    "area_crs": "EPSG:6933",
+    "coverage_rule": "point_covers"
   }
 }

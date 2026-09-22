@@ -6,19 +6,20 @@
       "properties": {
         "asset_id": "DEMO_A1",
         "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
         "asset_class": "warehouse",
         "asset_value_rub": "10000000",
         "vulnerability_coef": ".25",
         "value_date": "2026-09-01",
         "value_basis": "synthetic_replacement_value",
-        "longitude": "30.003",
-        "latitude": "50.003"
+        "longitude": "30.003109250343357",
+        "latitude": "50.0036298720369"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.003,
-          50.003
+          30.003109250343357,
+          50.0036298720369
         ]
       }
     },
@@ -27,19 +28,20 @@
       "properties": {
         "asset_id": "DEMO_A2",
         "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
         "asset_class": "substation",
         "asset_value_rub": "20000000",
         "vulnerability_coef": ".4",
         "value_date": "2026-09-01",
         "value_basis": "synthetic_replacement_value",
-        "longitude": "30.006",
-        "latitude": "50.003"
+        "longitude": "30.008291334248966",
+        "latitude": "50.008470123100075"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.006,
-          50.003
+          30.008291334248966,
+          50.008470123100075
         ]
       }
     },
@@ -48,19 +50,20 @@
       "properties": {
         "asset_id": "DEMO_A3",
         "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
         "asset_class": "road_unit",
         "asset_value_rub": "5000000",
         "vulnerability_coef": ".3",
         "value_date": "2026-09-01",
         "value_basis": "synthetic_replacement_value",
-        "longitude": "30.009",
-        "latitude": "50.003"
+        "longitude": "30.014509834935694",
+        "latitude": "50.00604993731904"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.009,
-          50.003
+          30.014509834935694,
+          50.00604993731904
         ]
       }
     },
@@ -69,19 +72,152 @@
       "properties": {
         "asset_id": "DEMO_A4",
         "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
         "asset_class": "facility",
         "asset_value_rub": "8000000",
         "vulnerability_coef": ".2",
         "value_date": "2026-09-01",
         "value_basis": "synthetic_replacement_value",
-        "longitude": "30.012",
-        "latitude": "50.003"
+        "longitude": "30.003109250343357",
+        "latitude": "50.02178329981831"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.012,
-          50.003
+          30.003109250343357,
+          50.02178329981831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A5",
+        "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
+        "asset_class": "pumping_station",
+        "asset_value_rub": "12000000",
+        "vulnerability_coef": ".35",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.007254917467847",
+        "latitude": "50.01573140366138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.007254917467847,
+          50.01573140366138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A6",
+        "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
+        "asset_class": "clinic",
+        "asset_value_rub": "30000000",
+        "vulnerability_coef": ".15",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.02176475240354",
+        "latitude": "50.00604993731904"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.02176475240354,
+          50.00604993731904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A7",
+        "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
+        "asset_class": "school",
+        "asset_value_rub": "18000000",
+        "vulnerability_coef": ".2",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.01243700137345",
+        "latitude": "50.01331085624876"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.01243700137345,
+          50.01331085624876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A8",
+        "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
+        "asset_class": "workshop",
+        "asset_value_rub": "6000000",
+        "vulnerability_coef": ".45",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.023837585965786",
+        "latitude": "50.00786506535682"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.023837585965786,
+          50.00786506535682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A9",
+        "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
+        "asset_class": "telecom_node",
+        "asset_value_rub": "4000000",
+        "vulnerability_coef": ".5",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.009327751030085",
+        "latitude": "50.010890429402494"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.009327751030085,
+          50.010890429402494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "asset_id": "DEMO_A10",
+        "aoi_id": "DEMO_AOI3",
+        "chip_id": "DEMO_CHIP3",
+        "asset_class": "water_intake",
+        "asset_value_rub": "16000000",
+        "vulnerability_coef": ".3",
+        "value_date": "2026-09-01",
+        "value_basis": "synthetic_replacement_value",
+        "longitude": "30.013473418154575",
+        "latitude": "50.02057286027563"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.013473418154575,
+          50.02057286027563
         ]
       }
     }

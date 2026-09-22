@@ -107,6 +107,8 @@ def validate(data, submission, *, check_rasters=True):
     data, submission = Path(data), Path(submission)
     from .audit_data import audit
     audit(data)
+    from .geometry import audit_geometry
+    geometry_report = audit_geometry(data)
     config = json.loads((data / "config.json").read_text())
     metadata = json.loads((submission / "run_metadata.json").read_text())
     for key in ["dataset_version", "code_commit", "seed", "environment", "threshold",
@@ -175,7 +177,7 @@ def validate(data, submission, *, check_rasters=True):
     raster_count = validate_rasters(data, submission, metadata) if check_rasters else None
     return {"checks": "passed", "assets": len(exposure), "assessed_assets": len(losses),
             "selected_candidates": len(actual), "cost_rub": str(total), "raster_aois": raster_count,
-            "loss_formula_checked": loss_model == "control_pvq",
+            "loss_formula_checked": loss_model == "control_pvq", "order_geometry": geometry_report,
             "scope": "format and declared arithmetic; custom loss formula and scientific quality require review"}
 
 

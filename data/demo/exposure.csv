@@ -1,5 +1,11 @@
-asset_id,aoi_id,asset_class,asset_value_rub,vulnerability_coef,value_date,value_basis,longitude,latitude
-DEMO_A1,DEMO_AOI3,warehouse,10000000,.25,2026-09-01,synthetic_replacement_value,30.003,50.003
-DEMO_A2,DEMO_AOI3,substation,20000000,.4,2026-09-01,synthetic_replacement_value,30.006,50.003
-DEMO_A3,DEMO_AOI3,road_unit,5000000,.3,2026-09-01,synthetic_replacement_value,30.009,50.003
-DEMO_A4,DEMO_AOI3,facility,8000000,.2,2026-09-01,synthetic_replacement_value,30.012,50.003
+asset_id,aoi_id,chip_id,asset_class,asset_value_rub,vulnerability_coef,value_date,value_basis,longitude,latitude
+DEMO_A1,DEMO_AOI3,DEMO_CHIP3,warehouse,10000000,.25,2026-09-01,synthetic_replacement_value,30.003109250343357,50.0036298720369
+DEMO_A2,DEMO_AOI3,DEMO_CHIP3,substation,20000000,.4,2026-09-01,synthetic_replacement_value,30.008291334248966,50.008470123100075
+DEMO_A3,DEMO_AOI3,DEMO_CHIP3,road_unit,5000000,.3,2026-09-01,synthetic_replacement_value,30.014509834935694,50.00604993731904
+DEMO_A4,DEMO_AOI3,DEMO_CHIP3,facility,8000000,.2,2026-09-01,synthetic_replacement_value,30.003109250343357,50.02178329981831
+DEMO_A5,DEMO_AOI3,DEMO_CHIP3,pumping_station,12000000,.35,2026-09-01,synthetic_replacement_value,30.007254917467847,50.01573140366138
+DEMO_A6,DEMO_AOI3,DEMO_CHIP3,clinic,30000000,.15,2026-09-01,synthetic_replacement_value,30.02176475240354,50.00604993731904
+DEMO_A7,DEMO_AOI3,DEMO_CHIP3,school,18000000,.2,2026-09-01,synthetic_replacement_value,30.01243700137345,50.01331085624876
+DEMO_A8,DEMO_AOI3,DEMO_CHIP3,workshop,6000000,.45,2026-09-01,synthetic_replacement_value,30.023837585965786,50.00786506535682
+DEMO_A9,DEMO_AOI3,DEMO_CHIP3,telecom_node,4000000,.5,2026-09-01,synthetic_replacement_value,30.009327751030085,50.010890429402494
+DEMO_A10,DEMO_AOI3,DEMO_CHIP3,water_intake,16000000,.3,2026-09-01,synthetic_replacement_value,30.013473418154575,50.02057286027563

@@ -16,7 +16,7 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
-      - run: python -m tools.audit_data --data data/demo
+      - run: python -m tools.audit_data --data data/demo --geometry
       - run: python -m tools.check_repository
       - name: Execute introductory notebook
         run: |
