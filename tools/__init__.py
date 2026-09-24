@@ -1,1 +1,1 @@
-"""Public arithmetic and submission checks; no predictive model or optimizer."""
+"""Maintenance of the reference materials; no participant solution code."""

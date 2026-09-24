@@ -1,19 +1,31 @@
 {
+  "assets.csv": [
+    "asset_id",
+    "chip_id",
+    "asset_class",
+    "asset_value_rub",
+    "vulnerability_coef",
+    "longitude",
+    "latitude"
+  ],
   "asset_loss.csv": [
     "asset_id",
-    "aoi_id",
+    "chip_id",
     "p_flood",
     "expected_loss_rub",
     "uncertainty",
     "rank",
-    "coverage_fraction",
     "status"
   ],
   "procurement_plan.csv": [
+    "strategy",
     "candidate_id",
     "area_km2",
     "base_rate_rub_km2",
     "base_rate_status",
+    "processing_level",
+    "usage_type",
+    "guaranteed_purchase",
     "processing_coef",
     "usage_coef",
     "freshness_coef",
@@ -25,16 +37,12 @@
     "formula",
     "legal_edition"
   ],
-  "raster_manifest.csv": [
-    "aoi_id",
-    "probability_path",
-    "mask_path"
-  ],
   "strategy_comparison.csv": [
     "strategy",
     "data_cost_rub",
     "other_cost_rub",
     "decision_cost_rub",
+    "budget_rub",
     "budget_feasible",
     "covered_expected_loss_rub",
     "coverage_share",

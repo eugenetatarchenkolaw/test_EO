@@ -6,7 +6,6 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
-from .pp840_helper import discount_coefficient
 
 ROOT = Path(__file__).parents[1]
 OUT = ROOT / "docs/figures"
@@ -64,7 +63,8 @@ def main():
     fig.text(.04,.91,"Скидка по ПП № 840 зависит от объема",fontsize=19,weight="bold")
     fig.text(.04,.84,"Редакция 27.08.2025 · расчет при разрешении 1 м · S в км²",fontsize=12)
     for sensor,color,label,style in [("optical",BLUE,"Оптика","-"),("sar",GOLD,"SAR","--")]:
-        y=[float(discount_coefficient(sensor,str(a),"1")) for a in area]
+        slope, intercept, floor = (0.058, 1.037, 0.2) if sensor == "optical" else (0.020, 1.031, 0.7)
+        y = np.clip(-slope * np.log(area) + intercept, floor, 1)  # Illustration only, r = 1 m.
         ax.plot(area,y,color=color,lw=2,ls=style,label=label)
     ax.set(xscale="log",xlim=(1,1e8),ylim=(0,1.05),xlabel="Площадь S, км² · логарифмическая шкала",ylabel="Коэффициент Р")
     ax.grid(color="#e5eaee");ax.legend(frameon=False,loc="lower left")

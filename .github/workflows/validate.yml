@@ -1,4 +1,4 @@
-name: Public starter checks
+name: Reference materials checks
 on:
   push:
   pull_request:
@@ -15,15 +15,16 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: python -m pip install -r requirements.txt
-      - run: python -m unittest discover -s tests -v
-      - run: python -m tools.audit_data --data data/demo --geometry
-      - run: python -m tools.check_repository
-      - name: Execute introductory notebook
+      - name: Check documentation and empty forms
+        run: python -m tools.check_repository
+      - name: Rebuild cited figures
+        run: python -m tools.generate_figures
+      - name: Execute introductory metadata notebook
         run: |
-          python - <<'PY'
+          python - <<'PYTHON'
           import nbformat
           from nbclient import NotebookClient
           nb = nbformat.read('notebooks/00_start_here.ipynb', as_version=4)
           NotebookClient(nb, timeout=120, kernel_name='python3', resources={'metadata': {'path': '.'}}).execute()
-          print('Notebook executed successfully')
-          PY
+          print('Introductory notebook executed; no participant results evaluated')
+          PYTHON

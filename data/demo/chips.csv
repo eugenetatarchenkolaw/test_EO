@@ -1,4 +1,0 @@
-chip_id,event_id,scene_id,aoi_id,s1_path,s2_path,label_path,valid_mask_path
-DEMO_CHIP1,DEMO_E1,DEMO_SCENE1,DEMO_AOI1,,,,
-DEMO_CHIP2,DEMO_E2,DEMO_SCENE2,DEMO_AOI2,,,,
-DEMO_CHIP3,DEMO_E3,DEMO_SCENE3,DEMO_AOI3,,,,

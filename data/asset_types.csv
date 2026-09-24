@@ -1,0 +1,11 @@
+asset_class,asset_value_rub,vulnerability_coef
+warehouse,10000000,0.25
+substation,20000000,0.40
+road_unit,5000000,0.30
+facility,8000000,0.20
+pumping_station,12000000,0.35
+clinic,30000000,0.15
+school,18000000,0.20
+workshop,6000000,0.45
+telecom_node,4000000,0.50
+water_intake,16000000,0.30
